@@ -1,0 +1,138 @@
+*{
+	margin: 0px;
+	border: 0px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
+	box-sizing: border-box;
+}/*Let's reset all the weirdo spacing some that browsers have(Looking at you IE)*/
+
+body{
+	background-color: #FFF;
+	font-family: arial;
+	color: #FFF;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.app{
+	overflow: hidden;
+	box-shadow: 5px 5px 10px #666;
+	margin: 10px;
+	width: 700px;
+	background-color: #444;
+}
+
+.padding{
+	padding: 10px;
+}
+
+.player{
+	width: 400px;
+	height: 500px;
+	border-right: 1px solid #444;
+	float: left;
+}
+
+.header{
+	background-color: #444;
+	border-bottom: 1px solid #444;
+	width: 400px;
+	height: 100px;
+}
+
+.player .header .play-button{
+	width: 100px;
+	height: 99px;
+	background-color: #444;
+	border-right: 1px solid #444;
+	float: left;
+	cursor: pointer;
+}
+
+.player .header .play-button #playpause{
+	font-size: 40px;
+	position: relative;
+	top: 20px;
+	text-align: center;
+}
+
+.player .header .display{
+	border-left: 1px solid #777;
+	float: left;
+	width: 400px;
+	height: 99px;
+}
+
+.player .header #volume{
+	width: 350px;
+}
+
+#volume, .volume-level{
+	float: left;
+}
+
+.volume-level{
+	margin-left: 5px;
+}
+
+.play-button, .display{
+	background-image: linear-gradient(180deg, rgba(255,255,255, 0.3), rgba(255,255,255, 0.1));
+}
+
+.player .playlist{
+	border-top: 1px solid #777;
+	background-color: #333;
+	background-image: linear-gradient(180deg, rgba(255,255,255, 0.2), rgba(255,255,255, 0.1));
+	height: 400px;
+	width: 400px;
+}
+
+.player .playlist .playlist-inner{
+	margin-top: 20px;
+	overflow-y: auto;
+	height: 310px;
+	padding-right: 10px;
+}
+
+.song{
+	background-color: #333;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+
+.song h5{
+	display: inline;
+}
+
+.song h5.remove{
+	float: right;
+	font-size: 16px;
+	color: #999;
+}
+
+.song h5.remove:hover{
+	color: #FFF;
+	cursor: pointer;
+}
+
+.song:nth-child(2n+2){
+	background-color: #444;
+}
+
+.catalogue{
+	float: left;
+	width: 300px;
+	height: 500px;
+	border-left: 1px solid #777;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.catalogue .song:hover{
+	cursor: pointer;
+	background-color: #494949;
+}

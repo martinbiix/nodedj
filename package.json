@@ -1,0 +1,25 @@
+{
+    "name": "NodeDJ",
+    "version": "0.0.0",
+    "Description": "A real time music streaming DJ application",
+    "dependencies": {
+        "lame": "latest",
+        "node-ffprobe": "latest",
+        "throttle": "latest",
+        "express": "latest",
+        "just": "latest",
+        "walk": "latest",
+        "consolidate": "latest",
+        "socket.io": "latest",
+        "uuid": "latest",
+	"path": "latest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/robertmain/nodej.git"
+    },
+    "author": {
+        "name": "Robert Main",
+        "url": "http://fortheloveofcode.pagodabox.com"
+    }
+}

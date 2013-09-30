@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Node DJ Streaming Radio</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="Stylesheet" type="text/css" href="/style.css" />
+        <script type="text/javascript" src="/jquery.js"></script>
+        <script type="text/javascript" src="/moment.js"></script>
+        <script type="text/javascript" src='/socket.io/socket.io.js'></script>
+    </head>
+    <body>
+        <audio id="stream" autoplay>
+            <source src="/stream" type="audio/mpeg">
+            <h1>Your browser does not support the audio tag.</h1>
+        </audio>
+        <div class="app">
+            <div class="player">
+                <div class="header">
+                    <div class="display padding">
+                        <span>
+                            <strong>Song: </strong><span id="now_playing_title"></span><br />
+                            <strong>Artist: </strong> <span id="now_playing_artist"></span><br />
+                            <strong>Album: </strong> <span id="now_playing_album"></span>
+                        </span><br />
+                        <input id="volume" value="100" type="range" min="0" max="100" /><strong class="volume-level">10</strong>
+                    </div>
+                </div>
+                <div class="playlist padding">
+                    <h3>Playlist</h3>
+                    <div class="playlist-inner" id="playlist"></div>
+                </div>
+            </div>
+            <div class="catalogue">
+                <div class="playlist-inner" id="catalogue"></div>
+            </div>
+        </div>
+        <script type="text/javascript" src="nodedj.js"></script>
+    </body>
+</html>
